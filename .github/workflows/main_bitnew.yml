@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'BITNew'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_285BC46FA5BD45559254CDBF53E6B76E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CFDBCC9770CD42E1B15FC7889DDE7F08 }}
           package: .
