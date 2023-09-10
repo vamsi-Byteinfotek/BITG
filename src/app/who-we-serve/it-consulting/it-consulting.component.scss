@@ -1,0 +1,50 @@
+.it-consulting {
+    &__header {
+      display: flex;
+      align-items: center;
+      padding: 136px 0;
+      background-size: 100% 100%;
+      background-image: url("../../../assets/it-consulting-major.png");
+      color: white;
+  
+      h1 {
+        background-color: white;
+        color: #111;
+        padding: 20px;
+        margin: 0;
+        font-size: 32px;
+      }
+    }
+  
+    &__content {
+      margin-top: 32px;
+  
+      &-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        color: black;
+  
+        .title {
+          font-size: 32px;
+          width: max-content;
+        }
+  
+        .content {
+          color: gray;
+          font-size: 18px;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+  
+          .image-div-container {
+            position: relative;
+            display: flex;
+            min-height: 1px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  

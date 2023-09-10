@@ -1,0 +1,103 @@
+<div class="dashboard-container">
+  <!-- JOB, HIRE cards -->
+  <div class="card-container">
+    <mat-card class="card">
+      <div class="background-image job"></div>
+      <div class="card-content">
+        <h2 class="card-title">Looking for a job?</h2>
+        <!-- <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p> -->
+        <a
+          mat-raised-button
+          color="warn"
+          aria-label="Learn more"
+          type="button"
+          href="mailto:contact@byteinfotek.com"
+        >
+          Learn more
+        </a>
+      </div>
+    </mat-card>
+    <mat-card class="card">
+      <div class="background-image hire"></div>
+      <div class="card-content">
+        <h2 class="card-title">Looking to hire?</h2>
+        <!-- <p class="card-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p> -->
+        <a
+          mat-raised-button
+          color="warn"
+          aria-label="Learn more"
+          href="mailto:contact@byteinfotek.com"
+        >
+          Learn more
+        </a>
+      </div>
+    </mat-card>
+  </div>
+
+  <!-- Introduuction -->
+  <div class="introduction">
+    <div>
+      <h2 class="introduction__title">
+        We got you covered for all your staffing needs
+        <span class="seperator">
+          <span class="seperator-border"></span>
+        </span>
+      </h2>
+      <div class="introduction__content">
+        Powered by visionaries with a collective 40+ years of technology
+        expertise , Byte InfoTek is poised to be one of the fastest growing IT
+        Consulting and Staffing solution firm headquartered in Houston. With an
+        Advanced Offshore arm in India, our motto is to feed to the need of
+        industry from Managed Services to High end cloud solutions.
+      </div>
+    </div>
+  </div>
+
+  <hr style="height: 1px; margin: 3rem 0" />
+
+  <app-who-we-serve-summary [showLearMore]="false"></app-who-we-serve-summary>
+
+  <hr style="height: 1px; margin: 3rem 0" />
+
+  <div class="news-room-container">
+    <img
+      class="news-room-image"
+      alt="news-room"
+      src="../../assets/news-room.jpeg"
+    />
+    <div class="news-room-content">
+      <h2 class="news-room-content__title">
+        Newsroom
+        <span class="seperator">
+          <span class="seperator-border"></span>
+        </span>
+      </h2>
+      <div class="news-room-content__messages">
+        <div class="message">
+          <h4 class="title">ByteInfoTek hires new Operations Manager</h4>
+          <p class="clarification">January 2022</p>
+        </div>
+
+        <div class="message">
+          <h4 class="title">
+            Call Center industry expecting a 5% growth rate in 2022
+          </h4>
+          <p class="clarification">January 2022</p>
+        </div>
+
+        <div class="message">
+          <h4 class="title">What are the top 10 in-demand jobs of the year?</h4>
+          <p class="clarification">January 2022</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr style="height: 1px; margin: 3rem 0" />
+
+  <app-contact-form class="dashboard-contact-form"></app-contact-form>
+</div>

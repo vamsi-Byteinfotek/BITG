@@ -1,0 +1,99 @@
+.toolbar {
+  height: 90px !important;
+  border-bottom: 1px solid #dbdbdb;
+  background-color: whitesmoke;
+
+  .header-container {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 8%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .mat-menu-item {
+      color: black;
+    }
+
+    .mat-toolbar-row,
+    .mat-toolbar-single-row {
+      justify-content: space-between;
+    }
+
+    .menu-items-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 99;
+
+      .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .menu-item {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        position: relative;
+        font-weight: normal;
+
+        &:hover {
+          color: brown;
+          border-bottom: 2px solid brown;
+        }
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        color: black;
+        background-color: white;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+        list-style: none;
+        padding: 0;
+        margin: 14px 0 0 -14px;
+        position: fixed;
+      }
+
+      .sub-menu-item {
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover {
+          color: white;
+          background-color: brown;
+        }
+      }
+
+      .menu-item:hover .sub-menu {
+        display: block;
+      }
+    }
+
+    .menu-icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 1020px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .menu-items-container,
+      .contact-us-button {
+        display: none;
+      }
+    }
+  }
+}
